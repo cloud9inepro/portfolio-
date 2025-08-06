@@ -1,12 +1,12 @@
 import GooeyNav from '../components/GooeyNav'
-
 // update with your own items
 
 const items = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", to: "home" },
+  { label: "About", to: "about" },
+  { label: "Contact", to: "contact" },
 ];
+
 
 function Header() {
   return (

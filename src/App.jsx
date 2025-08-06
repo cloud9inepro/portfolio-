@@ -1,11 +1,10 @@
-import ScrambledText from "./components/ScrambledText";
-import ProfileCard from "./components/ProfileCard";
+
 import "./App.css";
 import Hero from "./pages/Hero";
 import Header from "./pages/Header";
 import About from "./pages/About";
 import Skill from "./pages/Skill";
-
+import Project from "./pages/Project";
 function App() {
   return (
     <>
@@ -13,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Skill />
+      <Project />
     </>
   );
 }
