@@ -3,7 +3,13 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+.header-nav{
+  display: block;
+}
 
 .hero {
   max-width: 1280px;       
@@ -22,7 +28,7 @@
 .about{
   max-width: 1280px;  
   margin: 0 auto;
-  height: 60vh;
+
   text-align: center;
 }
 .about-title {
@@ -32,7 +38,11 @@
   text-align: center;
 }
 
-
+.skill-section {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
 
 .skill-icon {
   font-size: 2rem;
@@ -45,4 +55,62 @@
   margin-bottom: 1rem;
   text-align: center;
   font-family: fantasy;
+}
+.project p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1f1f1f;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #6c63ff;
+}
+
+
+
+/*-----------------------------------mobile--------------------------------*/
+
+@media (max-width: 768px) {
+ .header-nav {
+    display: none;
+  }
+  .hero {      
+  margin-top: 2rem;
+  gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
 }

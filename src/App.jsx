@@ -5,6 +5,7 @@ import Header from "./pages/Header";
 import About from "./pages/About";
 import Skill from "./pages/Skill";
 import Project from "./pages/Project";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <>
@@ -13,6 +14,10 @@ function App() {
       <About />
       <Skill />
       <Project />
+      <Contact />
+      <footer>
+        <p>© 2023 Ojieh Gift. All rights reserved.</p>
+      </footer>
     </>
   );
 }

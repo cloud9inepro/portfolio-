@@ -9,6 +9,7 @@ const items = [
   { content: <p className="skill-icon">Express.js<SiNodedotjs /> </p> },
   { content: <p className="skill-icon">EJS<SiEjs /></p> },
   { content: <p className="skill-icon">UI/UX Awareness<SiNextui /></p> },
+  { content: <p className="skill-icon">Problem-Solving<SiNextui /></p> },
    
    
 
@@ -16,8 +17,8 @@ const items = [
   
 function Skill() {
   return (
-    <>
-
+    <section id="skill" className="skill-section">
+        <h2 className="skill-title">Skills</h2>
   
 
 
@@ -32,7 +33,7 @@ function Skill() {
     pauseOnHover={true}
   />
 </div>
-</>
+</section>
     );
 }
 export default Skill;

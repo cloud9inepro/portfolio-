@@ -11,7 +11,7 @@ function Hero() {
           Frontend Developer & Web Designer<br /> I build interactive, responsive
           websites with clean code and modern UI.
         </ScrambledText>
-        
+
         <ProfileCard
           name="Ojieh Gift"
           title="Software Engineer"
@@ -22,8 +22,13 @@ function Hero() {
           showUserInfo={true}
           enableTilt={true}
           enableMobileTilt={false}
-          onContactClick={() => console.log("Contact clicked")}
-        />
+          
+         onContactClick={() => {
+          const section = document.getElementById("contact");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+         }} }
+        /> 
       </div>
     </>
   );
