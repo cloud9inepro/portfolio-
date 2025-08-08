@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import "./MagicBento.css";
 import sc1 from "../assets/sc1.png";
 import sc4 from "../assets/sc4.png";
+import sc3 from "../assets/sc3.png";
+import sc5 from "../assets/sc5.png";
 
 
 const DEFAULT_PARTICLE_COUNT = 12;
@@ -15,37 +17,37 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     image: sc1,
-    title: "Analytics",
+    title: "",
     description: "Track user behavior",
     label: "Insights",
   },
   {
     image: sc1,
-    title: "Dashboard",
+    title: "",
     description: "Centralized data view",
     label: "Overview",
   },
   {
-    image: "/assets/sc1.png",
-    title: "Collaboration",
-    description: "Work together seamlessly",
-    label: "Teamwork",
+    image: sc3,
+    title: "",
+    description: "",
+    label: "Interior Design",
   },
   {
     image: sc4,
-    title: "Automation",
-    description: "Streamline workflows",
-    label: "Efficiency",
+    title: "",
+    description: "Manage deliveries",
+    label: "Courier/Logistics",
   },
   {
-    color: "#060010",
-    title: "Integration",
+    image: sc5,
+    title: "",
     description: "Connect favorite tools",
-    label: "Connectivity",
+    label: "",
   },
   {
     color: "#060010",
-    title: "Security",
+    title: "",
     description: "Enterprise-grade protection",
     label: "Protection",
   },

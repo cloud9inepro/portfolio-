@@ -1,6 +1,6 @@
 import ScrambledText from "../components/ScrambledText";
 import ProfileCard from "../components/ProfileCard";
-import avatar from "../assets/avatar1.png";
+import avatar from "../assets/avatar2.png";
 import "../App.css";
 function Hero() {
   return (

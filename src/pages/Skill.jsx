@@ -1,7 +1,8 @@
 
 import { SiNodedotjs, SiReact, SiMongodb, SiEjs, SiNextui,} from "react-icons/si";
 import InfiniteScroll from '../components/InfiniteScroll';
-  
+import { TbBulb } from "react-icons/tb";
+
 const items = [
   { content: <p className="skill-icon">Node.js<SiNodedotjs /> </p> },
   { content: <p className="skill-icon">React Vite<SiReact /> </p> },
@@ -9,7 +10,7 @@ const items = [
   { content: <p className="skill-icon">Express.js<SiNodedotjs /> </p> },
   { content: <p className="skill-icon">EJS<SiEjs /></p> },
   { content: <p className="skill-icon">UI/UX Awareness<SiNextui /></p> },
-  { content: <p className="skill-icon">Problem-Solving<SiNextui /></p> },
+  { content: <p className="skill-icon">Problem-Solving<TbBulb /></p> },
    
    
 
