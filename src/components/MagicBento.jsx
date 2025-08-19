@@ -4,9 +4,11 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./MagicBento.css";
 import sc1 from "../assets/sc1.png";
-import sc4 from "../assets/sc4.png";
+import sc2 from "../assets/sc2.png";
 import sc3 from "../assets/sc3.png";
+import sc4 from "../assets/sc4.png";
 import sc5 from "../assets/sc5.png";
+import sc6 from "../assets/sc6.png";
 
 
 const DEFAULT_PARTICLE_COUNT = 12;
@@ -22,7 +24,7 @@ const cardData = [
     label: "Insights",
   },
   {
-    image: sc1,
+    image: sc2,
     title: "",
     description: "Centralized data view",
     label: "Overview",
@@ -30,26 +32,28 @@ const cardData = [
   {
     image: sc3,
     title: "",
-    description: "",
+    description: "ewfwfwwfwefw",
     label: "Interior Design",
   },
   {
     image: sc4,
     title: "",
-    description: "Manage deliveries",
+    description: "React & Vite courier site --deployed on Netlify",
     label: "Courier/Logistics",
+    link: "https://decoftlcourier.netlify.app",
   },
   {
     image: sc5,
     title: "",
-    description: "Connect favorite tools",
-    label: "",
+    description: "ehcwheiowhjoi",
+    label: "insights",
+    link: "https://myhouse-6lt9.onrender.com/",
   },
   {
-    color: "#060010",
+    image: sc6,
     title: "",
-    description: "Enterprise-grade protection",
-    label: "Protection",
+    description: "bbbb",
+    label: "Projects",
   },
 ];
 
@@ -585,13 +589,33 @@ const MagicBento = ({
                 clickEffect={clickEffect}
                 enableMagnetism={enableMagnetism}
               >
-                <div className="card__header">
-                  <div className="card__label">{card.label}</div>
-                </div>
-                <div className="card__content">
-                  <h2 className="card__title">{card.title}</h2>
-                  <p className="card__description">{card.description}</p>
-                </div>
+              {card.link ? (
+                <a
+                  href={card.link}
+                  className="project-card-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block", width: "100%", height: "100%" }}
+                >
+                  <div className="card__header">
+                    <div className="card__label">{card.label}</div>
+                  </div>
+                  <div className="card__content">
+                    <h2 className="card__title">{card.title}</h2>
+                    <p className="card__description">{card.description}</p>
+                  </div>
+                </a>
+              ) : (
+                <>
+                  <div className="card__header">
+                    <div className="card__label">{card.label}</div>
+                  </div>
+                  <div className="card__content">
+                    <h2 className="card__title">{card.title}</h2>
+                    <p className="card__description">{card.description}</p>
+                  </div>
+                </>
+              )}
               </ParticleCard>
             );
           }
@@ -708,6 +732,7 @@ const MagicBento = ({
                 el.addEventListener("click", handleClick);
               }}
             >
+             
               <div className="card__header">
                 <div className="card__label">{card.label}</div>
               </div>
@@ -715,7 +740,9 @@ const MagicBento = ({
                 <h2 className="card__title">{card.title}</h2>
                 <p className="card__description">{card.description}</p>
               </div>
+              
             </div>
+            
           );
         })}
       </BentoCardGrid>

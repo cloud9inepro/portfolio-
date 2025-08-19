@@ -7,9 +7,7 @@ html, body{
   overflow: auto;
 }
 
-.header-nav{
-  display: block;
-}
+
 
 .hero {    
     margin-left: auto;
@@ -106,7 +104,7 @@ footer{
 
 @media (max-width: 599px) {
  .header {
-    display: none;
+    
   }
   .hero {      
   margin-top: 1rem;
@@ -128,4 +126,19 @@ footer{
   padding: 2rem;
   text-align: center;
 } */
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    display: none !important; /* hide nav by default on mobile */
+    flex-direction: column !important;
+  }
+
+  .header-nav[style*="flex-direction: column"] {
+    display: flex !important; /* only show if navOpen styles apply */
+  }
+
+  div[style*="flex-direction: column"] > div[style*='width: 25px'] {
+    display: block !important; /* show hamburger bars */
+  }
 }
