@@ -8,8 +8,9 @@ function Hero() {
       <div className="hero">
         <ScrambledText>
           Hi, I’m Gift Ojieh 👋 <br />
-          Frontend Developer & Web Designer<br /> I build interactive, responsive
-          websites with clean code and modern UI.
+          Fullstack Developer
+          <br /> I build interactive, responsive websites with clean code and
+          modern UI.
         </ScrambledText>
 
         <ProfileCard
@@ -22,13 +23,13 @@ function Hero() {
           showUserInfo={true}
           enableTilt={true}
           enableMobileTilt={false}
-          
-         onContactClick={() => {
-          const section = document.getElementById("contact");
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-         }} }
-        /> 
+          onContactClick={() => {
+            const section = document.getElementById("contact");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        />
       </div>
     </>
   );

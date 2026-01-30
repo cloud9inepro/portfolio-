@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Hero from "./pages/Hero";
 import Header from "./pages/Header";

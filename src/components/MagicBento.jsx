@@ -4,12 +4,14 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./MagicBento.css";
 import sc1 from "../assets/sc1.png";
-import sc2 from "../assets/sc2.png";
+// import sc2 from "../assets/sc2.png";
 import sc3 from "../assets/sc3.png";
-import sc4 from "../assets/sc4.png";
+// import sc4 from "../assets/sc4.png";
 import sc5 from "../assets/sc5.png";
 import sc6 from "../assets/sc6.png";
-
+import test from "../assets/test.webp";
+import haunted from "../assets/haunted.webp";
+import neon from "../assets/neon.webp";
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
@@ -20,40 +22,43 @@ const cardData = [
   {
     image: sc1,
     title: "",
-    description: "Track user behavior",
-    label: "Insights",
+    description: "",
+    label: "Courier/Logistics mobile view",
+    link: "https://decoftlcourier.netlify.app"
   },
   {
-    image: sc2,
+    image: haunted,
     title: "",
-    description: "Centralized data view",
-    label: "Overview",
+    description: "",
+    label: "3D haunted house",
+    link: "https://gift-ghost-house.netlify.app/",
   },
   {
-    image: sc3,
+    image: neon,
     title: "",
-    description: "ewfwfwwfwefw",
-    label: "Interior Design",
+    description: "",
+    label: "3D Cyberpunk Scene built with Three.js",
+    link: "https://midnight-alley.netlify.app/",
   },
   {
-    image: sc4,
+    image: test,
     title: "",
-    description: "React & Vite courier site --deployed on Netlify",
-    label: "Courier/Logistics",
-    link: "https://decoftlcourier.netlify.app",
+    description: "",
+    label: "Immersive cinematic experience",
+    link: "https://testojiehgift.netlify.app",
   },
   {
     image: sc5,
     title: "",
-    description: "ehcwheiowhjoi",
-    label: "insights",
+    description: "",
+    label: "Landing page",
     link: "https://myhouse-6lt9.onrender.com/",
   },
   {
     image: sc6,
     title: "",
-    description: "bbbb",
-    label: "Projects",
+    description: "",
+    label: "tech website ",
   },
 ];
 
