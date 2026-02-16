@@ -3,7 +3,7 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./MagicBento.css";
-import sc1 from "../assets/sc1.png";
+import websiteaudit from "../assets/websiteaudit.webp";
 // import sc2 from "../assets/sc2.png";
 import sc3 from "../assets/sc3.png";
 // import sc4 from "../assets/sc4.png";
@@ -20,11 +20,11 @@ const MOBILE_BREAKPOINT = 768;
 
 const cardData = [
   {
-    image: sc1,
+    image: websiteaudit,
     title: "",
     description: "",
-    label: "Courier/Logistics mobile view",
-    link: "https://decoftlcourier.netlify.app"
+    label: "Website Audit Tool",
+    link: "https://website-audit-tool.netlify.app/"
   },
   {
     image: haunted,
